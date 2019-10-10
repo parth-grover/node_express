@@ -5,7 +5,7 @@ const main = {
 }
 
 main.get = function(uri,callback){
-	var a = mysqldb.query("SELECT *  FROM `aborder`.`ab_sk` WHERE product_uri = ?",uri, function(err, result) {
+	var a = mysqldb.query("SELECT *  FROM `table name` WHERE product_uri = ?",uri, function(err, result) {
 			if (err) {
 				logger.error(err);
 				return callback(err,null);
